@@ -8,13 +8,11 @@ function mostrarAleatorio(array) {
     // Obtener un índice aleatorio
     const indice = Math.floor(Math.random() * array.length);
     // Obtener el objeto correspondiente al índice
-    const objeto = array[indice];
-    $noun.innerHTML = objeto.noun
-    $description.innerHTML = objeto.description.english
+    const noun = array[indice];
+    $noun.innerHTML = noun
         // Eliminar el objeto del array
     array.splice(indice, 1);
     // Mostrar la información del objeto
-    console.log(objeto);
     console.log(array.length)
 }
 
